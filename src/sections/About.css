@@ -1,0 +1,136 @@
+.about {
+  background: var(--peach);
+  color: var(--ganache);
+  padding-bottom: 110px;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 70px;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.eyebrow--on-dark {
+  color: var(--wine);
+}
+
+.about__heading {
+  color: var(--ganache);
+  margin: 8px 0 22px;
+}
+
+.about__text p {
+  color: rgba(20, 24, 29, 0.75);
+  line-height: 1.72;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  max-width: 50ch;
+}
+
+.about__facts {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(20, 24, 29, 0.15);
+}
+
+.about__facts li {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.about__facts strong {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--wine);
+}
+
+.about__facts span {
+  font-size: 0.86rem;
+  color: rgba(20, 24, 29, 0.65);
+}
+
+.about__photos {
+  position: relative;
+  display: grid;
+  height: 520px;
+}
+
+.about__photo {
+  margin: 0;
+  position: absolute;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 25px 50px -20px rgba(20, 24, 29, 0.35);
+}
+
+.about__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__photo--a {
+  top: 0;
+  left: 8%;
+  width: 62%;
+  height: 66%;
+  z-index: 2;
+}
+
+.about__photo--b {
+  bottom: 0;
+  right: 0;
+  width: 52%;
+  height: 48%;
+  z-index: 1;
+  outline: 6px solid var(--peach);
+}
+
+.about__photo--c {
+  top: 8%;
+  right: 2%;
+  width: 34%;
+  height: 30%;
+  z-index: 3;
+  outline: 6px solid var(--peach);
+}
+
+@media (max-width: 980px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about__photos {
+    height: 400px;
+    order: -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .about {
+    padding-bottom: 70px;
+  }
+
+  .about__photos {
+    height: 320px;
+  }
+
+  .about__photo--c {
+    display: none;
+  }
+
+  .about__photo--a {
+    width: 66%;
+  }
+
+  .about__photo--b {
+    width: 56%;
+  }
+}

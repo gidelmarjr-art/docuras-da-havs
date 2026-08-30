@@ -1,0 +1,139 @@
+.gallery {
+  padding: 100px 0;
+  background: var(--cream-soft);
+}
+
+.gallery__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
+}
+
+.gallery__head h2 {
+  margin-top: 8px;
+}
+
+.gallery__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.gallery__chip {
+  border: 1px solid rgba(20, 24, 29, 0.2);
+  background: transparent;
+  color: var(--ink);
+  padding: 9px 20px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+}
+
+.gallery__chip:hover {
+  border-color: var(--wine);
+}
+
+.gallery__chip.is-active {
+  background: var(--wine);
+  border-color: var(--wine);
+  color: var(--cream);
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 190px;
+  gap: 18px;
+}
+
+.gallery__item {
+  position: relative;
+  margin: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  grid-column: span 1;
+  grid-row: span 1;
+  box-shadow: var(--shadow-card);
+}
+
+.gallery__item--wide {
+  grid-column: span 2;
+}
+
+.gallery__item--tall {
+  grid-row: span 2;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease);
+}
+
+.gallery__item:hover img {
+  transform: scale(1.07);
+}
+
+.gallery__item figcaption {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 16px;
+  background: linear-gradient(to top, rgba(20, 24, 29, 0.86), transparent 75%);
+  color: var(--cream);
+  transform: translateY(12px);
+  opacity: 0;
+  transition: all 0.35s var(--ease);
+}
+
+.gallery__item:hover figcaption {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.gallery__item figcaption span {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  display: block;
+}
+
+.gallery__item figcaption p {
+  font-size: 0.76rem;
+  color: rgba(251, 243, 231, 0.8);
+  margin-top: 3px;
+}
+
+@media (max-width: 980px) {
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 220px;
+  }
+}
+
+@media (max-width: 560px) {
+  .gallery {
+    padding: 70px 0;
+  }
+
+  .gallery__grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 260px;
+  }
+
+  .gallery__item--wide,
+  .gallery__item--tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .gallery__item figcaption {
+    opacity: 1;
+    transform: none;
+  }
+}

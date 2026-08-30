@@ -1,0 +1,89 @@
+.how {
+  padding: 100px 0 110px;
+  background: var(--cream);
+}
+
+.how__head {
+  margin-bottom: 54px;
+  max-width: 560px;
+}
+
+.how__head h2 {
+  margin-top: 8px;
+}
+
+.how__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+  counter-reset: step;
+  margin-bottom: 60px;
+}
+
+.how__step {
+  position: relative;
+  padding-top: 22px;
+  border-top: 2px solid var(--wine);
+}
+
+.how__num {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 14px;
+}
+
+.how__step h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--ganache);
+  margin-bottom: 8px;
+}
+
+.how__step p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+.how__cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: var(--paper);
+  border-radius: var(--radius-lg);
+  padding: 34px 40px;
+  box-shadow: var(--shadow-card);
+}
+
+.how__cta p {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--ganache);
+}
+
+@media (max-width: 980px) {
+  .how__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .how {
+    padding: 70px 0 70px;
+  }
+
+  .how__list {
+    grid-template-columns: 1fr;
+  }
+
+  .how__cta {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 26px;
+  }
+}

@@ -1,0 +1,41 @@
+.marquee {
+  background: var(--wine);
+  overflow: hidden;
+  padding: 16px 0;
+  border-top: 1px solid rgba(216, 184, 118, 0.35);
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 32s linear infinite;
+}
+
+.marquee__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.35rem;
+  color: var(--rose-soft);
+  padding: 0 26px;
+  white-space: nowrap;
+  text-transform: lowercase;
+}
+
+.marquee__dot {
+  color: var(--gold-light);
+  font-style: normal;
+  font-size: 1rem;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
