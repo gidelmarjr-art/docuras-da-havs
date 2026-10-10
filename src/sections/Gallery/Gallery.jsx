@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { CATEGORIES, GALLERY } from '../data/gallery';
+import { CATEGORIES, GALLERY } from '../../data/gallery';
 import './Gallery.css';
 
 export default function Gallery() {
