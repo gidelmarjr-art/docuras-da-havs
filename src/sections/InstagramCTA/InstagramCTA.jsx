@@ -1,5 +1,5 @@
-import { SITE } from '../data/siteConfig';
-import { InstagramIcon, ArrowIcon } from '../components/Icons';
+import { SITE } from '../../data/siteConfig';
+import { InstagramIcon, ArrowIcon } from '../../components/Icons';
 import boloHappyBirthday from '../assets/images/bolo-happy-birthday.jpg';
 import boloSara40 from '../assets/images/bolo-sara-40.jpg';
 import boloTemaBrasil from '../assets/images/bolo-tema-brasil.jpg';

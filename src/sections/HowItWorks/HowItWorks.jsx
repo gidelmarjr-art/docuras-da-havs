@@ -1,5 +1,5 @@
-import { whatsappLink } from '../data/siteConfig';
-import { WhatsAppIcon } from '../components/Icons';
+import { whatsappLink } from '../../data/siteConfig';
+import { WhatsAppIcon } from '../../components/Icons';
 import './HowItWorks.css';
 
 const STEPS = [
