@@ -1,9 +1,3 @@
-/**
- * PipedBorder — elemento assinatura do site.
- * Reproduz em SVG a borda "shell" feita com bico de confeitar,
- * igual às bordas em buttercream que aparecem nos bolos reais do ateliê.
- * Usado como divisor entre seções no lugar de uma linha reta genérica.
- */
 export default function PipedBorder({
   color = 'var(--wine)',
   background = 'var(--cream)',
