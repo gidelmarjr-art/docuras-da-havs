@@ -8,7 +8,7 @@ export const SITE = {
   // Link oficial de mensagens do WhatsApp Business (com o app_absent/autoload
   // e a mensagem padrão já configurados do lado do WhatsApp). Não anexar
   // ?text= extra aqui, pois entra em conflito com o template já definido.
-  whatsappUrl: 'https://api.whatsapp.com/message/YU7JTIPK4T4ZK1?autoload=1&app_absent=0',
+  whatsappUrl: 'https://wa.me/556199485448?text=Olá%2C%20gostaria%20de%20fazer%20um%20orçamento%21',
   city: 'Brasília, DF',
   email: 'contato@docurasdahavs.com.br',
 };
