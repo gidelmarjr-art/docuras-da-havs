@@ -1,5 +1,5 @@
-import { CATEGORY_CARDS } from '../data/gallery';
-import { ArrowIcon } from '../components/Icons';
+import { CATEGORY_CARDS } from '../../data/gallery';
+import { ArrowIcon } from '../../components/Icons';
 import './Categories.css';
 
 export default function Categories() {

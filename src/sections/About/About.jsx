@@ -1,7 +1,7 @@
 import boloPedrarias from '../assets/images/bolo-pedrarias.jpg';
 import boloLacosBrancos from '../assets/images/bolo-lacos-brancos.jpg';
 import tabletePistache from '../assets/images/tablete-pistache.jpg';
-import PipedBorder from '../components/PipedBorder';
+import PipedBorder from '../../components/PipedBorder';
 import './About.css';
 
 export default function About() {

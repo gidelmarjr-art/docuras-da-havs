@@ -1,6 +1,6 @@
-import { SITE, whatsappLink } from '../data/siteConfig';
-import { WhatsAppIcon, InstagramIcon, PinIcon } from '../components/Icons';
-import PipedBorder from '../components/PipedBorder';
+import { SITE, whatsappLink } from '../../data/siteConfig';
+import { WhatsAppIcon, InstagramIcon, PinIcon } from '../../components/Icons';
+import PipedBorder from '../../components/PipedBorder';
 import './Footer.css';
 
 export default function Footer() {
