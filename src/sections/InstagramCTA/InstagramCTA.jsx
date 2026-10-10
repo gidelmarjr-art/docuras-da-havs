@@ -1,10 +1,10 @@
 import { SITE } from '../../data/siteConfig';
 import { InstagramIcon, ArrowIcon } from '../../components/Icons';
-import boloHappyBirthday from '../assets/images/bolo-happy-birthday.jpg';
-import boloSara40 from '../assets/images/bolo-sara-40.jpg';
-import boloTemaBrasil from '../assets/images/bolo-tema-brasil.jpg';
-import caixaDiaDasMaes from '../assets/images/caixa-presente-dia-das-maes.jpg';
-import boloMargaridas from '../assets/images/bolo-margaridas-abelhas.jpg';
+import boloHappyBirthday from '../../assets/images/bolo-happy-birthday.jpg';
+import boloSara40 from '../../assets/images/bolo-sara-40.jpg';
+import boloTemaBrasil from '../../assets/images/bolo-tema-brasil.jpg';
+import caixaDiaDasMaes from '../../assets/images/caixa-presente-dia-das-maes.jpg';
+import boloMargaridas from '../../assets/images/bolo-margaridas-abelhas.jpg';
 import './InstagramCTA.css';
 
 const TILES = [boloHappyBirthday, boloSara40, boloTemaBrasil, caixaDiaDasMaes, boloMargaridas];

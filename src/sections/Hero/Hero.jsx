@@ -1,5 +1,5 @@
-import boloJardimRosas from '../assets/images/bolo-jardim-rosas.jpg';
-import boloClassicoRosa from '../assets/images/bolo-classico-rosa.jpg';
+import boloJardimRosas from '../../assets/images/bolo-jardim-rosas.jpg';
+import boloClassicoRosa from '../../assets/images/bolo-classico-rosa.jpg';
 import { whatsappLink, SITE } from '../../data/siteConfig';
 import { WhatsAppIcon, InstagramIcon } from '../../components/Icons';
 import PipedBorder from '../../components/PipedBorder';
