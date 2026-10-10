@@ -5,8 +5,6 @@
   right: 0;
   z-index: 100;
   padding: 22px 0;
-  /* O hero agora é claro (pêssego da logo), então o texto do menu
-     já nasce escuro em vez de precisar de um fundo escuro por baixo. */
   background: transparent;
   transition: background 0.4s var(--ease), padding 0.4s var(--ease), box-shadow 0.4s var(--ease);
 }
